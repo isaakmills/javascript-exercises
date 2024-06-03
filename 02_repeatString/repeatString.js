@@ -1,6 +1,13 @@
-const repeatString = function(string,num) {
-    
-    return string.repeat(num)
+const repeatString = function(string,num){
+    if (num == 0){
+        return ""
+    }else if (num <= -1){
+        return "ERROR"
+        
+    } else {
+        return string.repeat(num)
+
+    }
 
 
 };
